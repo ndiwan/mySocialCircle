@@ -1,8 +1,9 @@
-
+import NavComponent from "./NavComponent"
 
 const MainPage = () => {
   return (
-    <div>
+    <div className="appContainer">
+      <NavComponent />
       main page
     </div>
   )

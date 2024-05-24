@@ -1,9 +1,10 @@
-
+import NavComponent from "./NavComponent"
 
 const EditComponent = () => {
   return (
-    <div>
-      edit
+<div className="appContainer">
+      <NavComponent />
+     edit
     </div>
   )
 }

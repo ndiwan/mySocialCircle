@@ -1,10 +1,11 @@
-
+import NavComponent from "./NavComponent"
 
 const DetailsComponent = () => {
   return (
-    <div>
-      detail
-    </div>
+    <div className="appContainer">
+    <NavComponent />
+ details
+  </div>
   )
 }
 

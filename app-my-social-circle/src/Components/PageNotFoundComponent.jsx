@@ -1,9 +1,10 @@
-
+import NavComponent from "./NavComponent"
 const PageNotFoundComponent = () => {
   return (
-    <div>
-      page not found
-    </div>
+    <div className="appContainer">
+    <NavComponent />
+   page not found
+  </div>
   )
 }
 

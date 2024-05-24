@@ -1,10 +1,11 @@
-
+import NavComponent from "./NavComponent"
 
 const FormComponent = () => {
   return (
-    <div>
-      form
-    </div>
+    <div className="appContainer">
+    <NavComponent />
+   form
+  </div>
   )
 }
 
