@@ -1,11 +1,27 @@
+import PropTypes from 'prop-types'
+import {Link} from 'react-router-dom'
 
 
-const ListItemComponent = () => {
+const ListItemComponent = ({contact}) => {
+ 
+
   return (
-    <div>
-     list item 
-    </div>
+    <Link to={`/contact-detail/${contact.id}`}>
+    <p>Name: {contact.name}</p>
+    <p>Phone: {contact.phone}</p>
+    <p>Address: {contact.address}</p>
+    <p>Additional information: {contact.note}</p>
+  </Link>
+
+   /*  <div>
+    <p>Name: {contact.name}</p>
+    <p>Phone: {contact.phone}</p>
+    <p>Address: {contact.address}</p>
+    <p>Additional information: {contact.note}</p>
+  </div> */
   )
 }
-
+ListItemComponent.propTypes = {
+  contact: PropTypes.object.isRequired,
+};
 export default ListItemComponent
